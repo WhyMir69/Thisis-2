@@ -1,0 +1,54 @@
+.header {
+  background-color: white;
+  padding: 0.1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  padding: 0 2rem;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0;
+}
+
+.brand-logo-dark {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1f2937;
+}
+
+.brand-logo-image {
+  height: 70px;
+  width: auto;
+  max-width: 250px;
+  display: block !important;
+  object-fit: contain;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.user-greeting {
+  display: flex;
+  align-items: center;
+}
+
+.greeting-text {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-right: 1rem;
+}
+
+.header-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}

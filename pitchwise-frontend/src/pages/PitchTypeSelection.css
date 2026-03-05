@@ -1,0 +1,221 @@
+.pitch-setup-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pitch-setup-header {
+  margin-bottom: 2rem;
+}
+
+.pitch-setup-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.pitch-setup-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.pitch-setup-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+/* Pitch Types List */
+.pitch-types-list {
+  border-right: 1px solid #e5e7eb;
+  padding-right: 2rem;
+}
+
+.pitch-type-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  margin-bottom: 0.75rem;
+  border: 2px solid transparent;
+}
+
+.pitch-type-item:hover {
+  background-color: #f9fafb;
+}
+
+.pitch-type-item.selected {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.pitch-type-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.pitch-type-info {
+  flex: 1;
+}
+
+.pitch-type-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.pitch-type-info p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.selected-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  position: relative;
+}
+
+.selected-indicator::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Pitch Description Panel */
+.pitch-description-panel {
+  padding-left: 2rem;
+}
+
+.pitch-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.detail-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.pitch-detail-item div {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.pitch-detail-item strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.pitch-description-text {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.pitch-description-text p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.start-simulation-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.start-simulation-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .pitch-setup-content {
+    grid-template-columns: 1fr;
+  }
+
+  .pitch-types-list {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  .pitch-description-panel {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pitch-setup-container {
+    padding: 1rem;
+  }
+
+  .pitch-setup-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .pitch-setup-content {
+    padding: 1.5rem;
+  }
+}

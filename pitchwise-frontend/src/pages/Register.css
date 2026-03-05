@@ -1,0 +1,127 @@
+/* Reusing many styles from Login.css */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it covers full height */
+  background-color: #dbeafe;
+  padding: 2rem 0; /* Add some padding for smaller screens */
+}
+
+.register-box {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  border-top: 4px solid #2563eb; /* The blue top border */
+}
+
+.brand-logo-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+.create-account-text {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: #1f2937;
+}
+
+.join-text {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.register-form {
+  text-align: left;
+}
+
+/* ... (reuse form-group, input-wrapper, input-icon, password-toggle, divider, social-login, social-btn, social-icon from Login.css) ... */
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151; }
+.input-wrapper { position: relative; display: flex; align-items: center; }
+.input-icon { position: absolute; left: 1rem; color: #9ca3af; }
+.input-wrapper input { width: 100%; padding: 0.75rem 1rem 0.75rem 3rem; border: 1px solid #d1d5db; border-radius: 0.5rem; font-size: 1rem; box-sizing: border-box; }
+.password-toggle { position: absolute; right: 1rem; background: none; border: none; color: #9ca3af; cursor: pointer; }
+.divider { display: flex; align-items: center; text-align: center; margin-bottom: 1.5rem; color: #9ca3af; }
+.divider::before, .divider::after { content: ''; flex: 1; border-bottom: 1px solid #e5e7eb; }
+.divider span { padding: 0 1rem; }
+.social-login { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+.social-btn { flex: 1; display: flex; justify-content: center; align-items: center; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.5rem; background-color: white; font-weight: 500; color: #374151; cursor: pointer; transition: background-color 0.2s; }
+.social-btn:hover { background-color: #f3f4f6; }
+.social-icon { margin-right: 0.5rem; font-size: 1.25rem; }
+
+.terms-agreement {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.terms-agreement input {
+  margin-right: 0.5rem;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: none;
+  margin: 0 0.25rem;
+}
+
+.create-account-btn {
+  margin-bottom: 1.5rem;
+}
+
+.signin-text-bottom {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+.signin-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Error handling styles */
+.error-message {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.success-message {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.field-error {
+  display: block;
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.input-wrapper.error input {
+  border-color: #dc2626;
+}

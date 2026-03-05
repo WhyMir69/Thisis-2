@@ -1,0 +1,156 @@
+.sidebar {
+  width: 80px;
+  background-color: #2563eb; /* Blue background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0.5rem;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar:hover {
+  width: 280px;
+  padding: 1.5rem;
+}
+
+.sidebar-brand {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+
+.brand-logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .brand-logo {
+  opacity: 1;
+}
+
+.brand-logo-image {
+  width: 0;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar:hover .brand-logo-image {
+  width: 100%;
+  max-width: 100%;
+  opacity: 1;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: center;
+  transition: justify-content 0.3s ease;
+}
+
+.sidebar:hover .user-profile {
+  justify-content: flex-start;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 0;
+  border: 2px solid white;
+  transition: margin-right 0.3s ease;
+  flex-shrink: 0;
+}
+
+.sidebar:hover .user-avatar {
+  margin-right: 1rem;
+}
+
+.user-info {
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar:hover .user-info {
+  max-width: 200px;
+  opacity: 1;
+}
+
+.user-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.user-email {
+  font-size: 0.75rem;
+  margin: 0;
+  opacity: 0.8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s, padding 0.3s ease;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.sidebar:hover .nav-link {
+  justify-content: flex-start;
+  padding: 0.75rem 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-icon {
+  margin-right: 0;
+  font-size: 1.25rem;
+  transition: margin-right 0.3s ease;
+  flex-shrink: 0;
+}
+
+.sidebar:hover .nav-icon {
+  margin-right: 1rem;
+}
+
+.nav-link span {
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-width 0.3s ease;
+}
+
+.sidebar:hover .nav-link span {
+  opacity: 1;
+  max-width: 200px;
+}

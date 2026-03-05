@@ -1,0 +1,899 @@
+.pitch-content-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+.back-button:hover {
+  background: #2563eb;
+}
+
+.back-icon {
+  font-size: 1.1rem;
+}
+
+.pitch-content-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon-header {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.75rem;
+  margin: 0 auto 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Upload Area */
+.upload-area {
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: #fafafa;
+  transition: all 0.3s;
+}
+
+.upload-area:hover {
+  border-color: #6366F1;
+  background: #f9fafb;
+}
+
+.upload-icon-large {
+  font-size: 3.5rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.upload-text {
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.upload-subtext {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 1.25rem;
+}
+
+.select-files-btn {
+  padding: 0.7rem 2rem;
+  background: #6366F1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.select-files-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+.selected-files-list {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.selected-files-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.selected-file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.file-name {
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  font-weight: 500;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-size {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-left: 0.5rem;
+}
+
+.supported-files {
+  margin-bottom: 1.5rem;
+}
+
+.supported-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.file-types {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.file-badge {
+  padding: 0.35rem 0.75rem;
+  background: #f3f4f6;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Video Simulation Options */
+.simulation-options-box {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.simulation-option-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.simulation-option-btn:hover {
+  border-color: #8B5CF6;
+  background: #f5f3ff;
+}
+
+.simulation-option-btn .option-icon {
+  font-size: 1.5rem;
+  color: #8B5CF6;
+}
+
+/* Pitch Info Box */
+.pitch-info-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #eff6ff;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.info-icon-box {
+  width: 44px;
+  height: 44px;
+  background: #6366F1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.info-content h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.info-content p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Pitch Description Box */
+.pitch-description-box {
+  margin-bottom: 1.5rem;
+}
+
+.pitch-description-box h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.detail-bullet {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.detail-item strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.pitch-desc-text {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  border-left: 3px solid #8B5CF6;
+}
+
+/* Buttons */
+.start-analysis-btn,
+.start-simulation-btn {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+.start-analysis-btn {
+  background: #6366F1;
+}
+
+.start-analysis-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+.start-simulation-btn {
+  background: #8B5CF6;
+}
+
+.start-simulation-btn:hover {
+  background: #7c3aed;
+  transform: translateY(-1px);
+}
+
+.view-rubric-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.view-rubric-btn:hover {
+  border-color: #6366F1;
+  color: #6366F1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .pitch-content-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .simulation-options-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .pitch-content-container {
+    padding: 1rem;
+  }
+
+  .content-card {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+}
+
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+.back-button:hover {
+  background: #2563eb;
+  transform: translateX(-4px);
+}
+
+.back-icon {
+  font-size: 1.2rem;
+}
+
+.pitch-content-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon-header {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Upload Area */
+.upload-area {
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: #f9fafb;
+  transition: all 0.3s;
+}
+
+.upload-area:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.upload-icon-large {
+  font-size: 4rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.upload-text {
+  font-size: 1rem;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.upload-subtext {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.select-files-btn {
+  padding: 0.75rem 2rem;
+  background: #6366F1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.select-files-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.supported-types {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.type-badge {
+  padding: 0.25rem 0.75rem;
+  background: #e5e7eb;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Record Area */
+.record-area {
+  text-align: center;
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.record-icon-large {
+  font-size: 4rem;
+  color: #8B5CF6;
+  margin-bottom: 1rem;
+}
+
+.record-text {
+  font-size: 1rem;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.record-subtext {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.start-record-btn {
+  padding: 0.75rem 2rem;
+  background: #8B5CF6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+
+.start-record-btn:hover {
+  background: #7c3aed;
+  transform: translateY(-2px);
+}
+
+/* Text Area */
+.text-area {
+  margin-bottom: 1.5rem;
+}
+
+.pitch-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: all 0.3s;
+}
+
+.pitch-textarea:focus {
+  outline: none;
+  border-color: #EC4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+}
+
+.text-subtext {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Simulation Card */
+.simulation-card {
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.simulation-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.simulation-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.simulation-option:hover {
+  border-color: #8B5CF6;
+  background: #f5f3ff;
+}
+
+.simulation-option.active {
+  border-color: #8B5CF6;
+  background: #f5f3ff;
+}
+
+.option-icon {
+  font-size: 1.5rem;
+  color: #8B5CF6;
+}
+
+.pitch-info-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #eff6ff;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.info-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.info-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.info-content p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.pitch-description-details {
+  margin-bottom: 1.5rem;
+}
+
+.pitch-description-details h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.detail-icon {
+  font-size: 1.25rem;
+}
+
+.description-text {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #8B5CF6;
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.start-analysis-btn,
+.start-simulation-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+.start-analysis-btn {
+  background: linear-gradient(135deg, #6366F1 0%, #4f46e5 100%);
+}
+
+.start-analysis-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+}
+
+.start-simulation-btn {
+  background: linear-gradient(135deg, #8B5CF6 0%, #7c3aed 100%);
+}
+
+.start-simulation-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(139, 92, 246, 0.3);
+}
+
+.view-rubric-btn {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.view-rubric-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Rubric Modal Styles */
+.rubric-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.rubric-modal {
+  background: white;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.rubric-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+
+.rubric-modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.close-modal-btn:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.rubric-modal-content {
+  padding: 2rem;
+}
+
+.rubric-category {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.rubric-category:last-child {
+  margin-bottom: 0;
+}
+
+.rubric-category h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.rubric-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rubric-category ul li {
+  padding: 0.5rem 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.rubric-category ul li strong {
+  color: #1f2937;
+  margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .pitch-content-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pitch-content-container {
+    padding: 1rem;
+  }
+
+  .pitch-content-cards {
+    gap: 1.5rem;
+  }
+
+  .content-card {
+    padding: 1.5rem;
+  }
+
+  .view-rubric-btn {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
