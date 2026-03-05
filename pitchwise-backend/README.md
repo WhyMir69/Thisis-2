@@ -2,7 +2,7 @@
 
 Backend API for PitchWise - An AI-Powered Pitch Evaluation Platform built with FastAPI, MySQL, and JWT authentication.
 
-## 🚀 Features
+## Features
 
 - ✅ User registration and authentication (JWT)
 - ✅ Pitch management (CRUD operations)
@@ -13,14 +13,14 @@ Backend API for PitchWise - An AI-Powered Pitch Evaluation Platform built with F
 - ✅ CORS enabled for frontend integration
 - 🔄 AI-powered feedback (ready for integration)
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 - Python 3.8 or higher
 - MySQL Server 8.0 or higher
 - pip (Python package manager)
 
-## 🛠️ Installation
+## Installation
 
 ### 1. Clone the repository (if not already done)
 
@@ -101,7 +101,7 @@ python -c "import secrets; print(secrets.token_hex(32))"
 mkdir uploads
 ```
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Start the development server:
 
@@ -114,7 +114,7 @@ The API will be available at:
 - **Interactive API Docs (Swagger)**: http://localhost:8000/docs
 - **Alternative API Docs (ReDoc)**: http://localhost:8000/redoc
 
-## 📚 API Endpoints
+## API Endpoints
 
 ### Authentication
 
@@ -144,7 +144,7 @@ The API will be available at:
 | GET | `/` | Welcome message | No |
 | GET | `/health` | Health check | No |
 
-## 🔐 Authentication
+## Authentication
 
 The API uses JWT (JSON Web Tokens) for authentication. To access protected endpoints:
 
@@ -156,7 +156,7 @@ The API uses JWT (JSON Web Tokens) for authentication. To access protected endpo
 Authorization: Bearer <your_token_here>
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 pitchwise-backend/
@@ -189,7 +189,7 @@ pitchwise-backend/
 └── README.md                # This file
 ```
 
-## 🧪 Testing the API
+## Testing the API
 
 ### Using the interactive docs:
 
@@ -219,7 +219,7 @@ curl -X POST "http://localhost:8000/pitches/" \
   -d '{"title":"My First Pitch","pitch_type":"elevator","content":"This is my pitch content"}'
 ```
 
-## 🔮 Future AI Integration
+## Future AI Integration
 
 The database models include fields for AI-powered feedback:
 - `clarity_score`
@@ -231,7 +231,7 @@ The database models include fields for AI-powered feedback:
 
 You can integrate AI services later to analyze pitch audio/video and populate these fields.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Database Connection Issues
 
@@ -257,14 +257,14 @@ If port 8000 is already in use:
 uvicorn app.main:app --reload --port 8001
 ```
 
-## 📝 Notes
+## Notes
 
 - The database tables will be created automatically when you first run the application
 - File uploads are stored in the `uploads/` directory
 - JWT tokens expire after 24 hours (configurable in `config.py`)
 - CORS is enabled for `http://localhost:3000` by default
 
-## 🤝 Connecting to Frontend
+## Connecting to Frontend
 
 Your frontend is configured to run on http://localhost:3000. Make sure to:
 
@@ -272,7 +272,7 @@ Your frontend is configured to run on http://localhost:3000. Make sure to:
 2. Include the JWT token in the Authorization header for protected routes
 3. Handle CORS properly (already configured in backend)
 
-## 📄 License
+## License
 
 This project is for thesis/educational purposes.
 
